@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch("https://add-post.vercel.app/api/posts", {
+  const res = await fetch(`${process.env.ROOT_DIRECTORY}/api/posts`, {
     cache: "no-store",
   });
 
